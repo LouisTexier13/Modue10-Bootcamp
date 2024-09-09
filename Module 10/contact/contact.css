@@ -1,0 +1,187 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+  }
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+header{
+    background-color: #082B59;
+    border-bottom: 10px solid #d98555;
+    align-items: center;
+    display: flex;
+    
+}
+.logo{
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+nav {
+    display: flex;
+    gap: 50px; /* Space between the nav links */
+    justify-content: right;
+    margin-left: 50%;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+    
+}
+  
+a {
+    color: #59331d;
+    
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: #d98555;
+  }
+  .main-bkgd {
+    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    padding-bottom: 300px;
+  }
+
+ img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ }
+
+    h1{
+        margin-left: 50px;
+    }
+ 
+ .main{ 
+    margin-left: 50px;
+    display: flex;
+    gap: 0%;
+}
+
+.text {
+    display: inline-block; 
+    margin-right: 20px; 
+    text-align: left; 
+    width: 30%
+}
+
+.image{
+    margin-left: 20%;
+    margin-right: 30px;;
+   
+}
+
+ 
+
+  footer {
+    display: flex;
+    background-color: #082B59;
+    color: #f2f2f2;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  
+  footer a {
+    display: flex;
+    color: #f2f2f2;
+    flex-direction: row;
+    font-size: 2rem;
+    align-items: center;
+    margin: 0 ;
+    padding: 0;
+  }
+
+  .footerlink{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    header .logo {
+        margin-right: 20px;
+    }
+    
+     nav {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        flex-direction: row;
+    
+    }
+    .image img{
+        display: flex;
+        margin-right: 50px;
+        width: 350px;
+    }
+  }
+  @media (min-width: 360px) and (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+      }
+    
+      header{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+    section.main {
+        display: flex;              /* Use flexbox to align items */
+        flex-direction: column;     /* Stack items vertically */
+        align-items: center;        /* Center items horizontally */
+        justify-content: center;    /* Center items vertically */
+        text-align: center;         /* Center text inside the container */
+        padding: 20px;              /* Optional: Add padding for spacing */
+        box-sizing: border-box;     /* Include padding in width calculation */
+    }
+
+    .text {
+        margin-bottom: 20px;
+        width: 100%;        /* Space between text and image */
+    }
+    .image {
+        width: 100%;                /* Ensure the image container takes full width */
+        display: flex;              /* Use flexbox for the image */
+        justify-content: center;    /* Center the image horizontally */
+    }
+
+    .image img {
+        max-width: 100%;            /* Make the image responsive */
+        height: auto;               /* Maintain aspect ratio */
+        object-fit: cover;    
+        margin-right: 90px; 
+        
+
+             
+    }
+  }

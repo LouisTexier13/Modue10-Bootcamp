@@ -156,28 +156,28 @@ a {
       }
 
     section.main {
-        display: flex;              /* Use flexbox to align items */
-        flex-direction: column;     /* Stack items vertically */
-        align-items: center;        /* Center items horizontally */
-        justify-content: center;    /* Center items vertically */
-        text-align: center;         /* Center text inside the container */
-        padding: 20px;              /* Optional: Add padding for spacing */
-        box-sizing: border-box;     /* Include padding in width calculation */
+        display: flex;              
+        flex-direction: column;     
+        align-items: center;        
+        justify-content: center;    
+        text-align: center;         
+        padding: 20px;              
+        box-sizing: border-box;     
     }
 
     .text {
         margin-bottom: 20px;
-        width: 100%;        /* Space between text and image */
+        width: 100%;        
     }
     .image {
-        width: 100%;                /* Ensure the image container takes full width */
-        display: flex;              /* Use flexbox for the image */
-        justify-content: center;    /* Center the image horizontally */
+        width: 100%;                
+        display: flex;              
+        justify-content: center;    
     }
 
     .image img {
-        max-width: 100%;            /* Make the image responsive */
-        height: auto;               /* Maintain aspect ratio */
+        max-width: 100%;            
+        height: auto;              
         object-fit: cover;    
         margin-right: 90px; 
         
